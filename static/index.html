@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de insignias</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <img src="clipp.png" alt="Logo de la empresa" class="logo">
+      </div>
+      <div class="col-md-8">
+        <h1 class="title">Sistema de insignias</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Usuarios</h2>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Puntos</th>
+                </tr>
+              </thead>
+              <tbody id="usuarios-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Tareas/Actividades</h2>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Tarea</th>
+                  <th>Servicio</th>
+                </tr>
+              </thead>
+              <tbody id="actividades-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row chart-container">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Puntos por usuario</h2>
+            <canvas id="barchart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+
+</html>
